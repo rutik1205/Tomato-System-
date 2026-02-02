@@ -23,7 +23,7 @@ def Home(lang_code):
 
     st.markdown("---")
 
-    model = tf.keras.models.load_model('best_tomato_model.h5')
+    model = tf.keras.models.load_model('tomato_disease_model.h5')
 
     # Classes for diseases
     classes = ['Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'No_tomato_leaf', 'Septoria_leaf_spot',
@@ -169,3 +169,4 @@ def Home(lang_code):
     st.write ( t["footer_description"] )
     st.markdown ( f"#### {t['footer_closing']}" )
     st.markdown ( "---" )
+
